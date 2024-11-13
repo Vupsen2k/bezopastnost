@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+.pt-sans-narrow-regular {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+	background-color: rgb(241, 234, 224);
+}
+
+.kiber {
+	border-radius: 20px;
+	width: 100%;
+}
+
+header {
+	width: 1100px;
+	margin: auto;
+	background: #cab3c5;
+}
+
+/* Стиль списка */
+ul.breadcrumb {
+	padding: 10px 16px;
+	list-style: none;
+	background-color: rgb(241, 234, 224);
+	margin-top: 100px;
+	border: solid 0.5px black;
+	border-radius: 20px;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+	display: inline;
+	font-size: 15px;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li + li:before {
+	padding: 8px;
+	color: black;
+	content: '/\00a0';
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+	color: #01447e;
+	text-decoration: underline;
+}
+
+.name-state {
+	width: 1100px;
+	padding: 30px;
+	margin: auto;
+	padding-left: 100px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	margin-top: 0;
+}
+
+a:hover {
+	color: yellow;
+}
+
+.state-text span {
+	font-weight: bold;
+}
+
+.name-state-bg {
+	background: #daafd0;
+	width: 100%;
+	margin-top: 50px;
+	-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	border-radius: 20px;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.green {
+	background: #6dbfb8;
+}
+
+.black-yellow {
+	background: #fec76f;
+}
+
+.name-state h1 {
+	font-size: 60px;
+	width: 70%;
+}
+
+.name-state p {
+	font-size: 20px;
+	width: 640px;
+}
+
+.name-state-white {
+	color: white;
+}
+
+video {
+	width: 100%;
+}
+
+.main {
+	width: 1000px;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.state-text {
+	width: 740px;
+	margin: auto;
+}
+
+.state-text h1 {
+	font-size: 40px;
+	margin-top: 50px;
+	width: 62%;
+}
+
+.state-text p,
+.state-text li {
+	font-size: 25px;
+	margin-top: 20px;
+}
+
+.history {
+	width: 50%;
+}
+
+.container-history p {
+	margin-top: 0;
+	font-size: 23px;
+	font-style: italic;
+}
+
+.container-history {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+ul.dash-list {
+	list-style: none;
+	padding: 0; /* Отказываемся от стандартных маркеров */
+}
+ul.dash-list li::before {
+	content: '– '; /* Вот и наше тире! */ /* А здесь обеспечим утонченный отступ для тире */
+}
+
+.state-text .date {
+	font-size: 15px;
+	color: silver;
+}
+
+@media (max-width: 768px) {
+
+	.name-state-bg{
+		width: 95%;
+	}
+	.name-state {
+		width: 100%;
+		margin: 0;
+		padding: 20px;
+	}
+
+	.name-state p {
+		width: 80%;
+	}
+
+	.name-state h1 {
+		font-size: 35px;
+	}
+
+	.breadcrumb {
+		width: 80%;
+	}
+	.main {
+		width: 100%;
+		margin: 0;
+	}
+	.main img {
+		width: 90%;
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+
+	video {
+		width: 90%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.state-text {
+		width: 90%;
+		margin: 0;
+		padding-left: 10px;
+	}
+
+	.state-text h1 {
+		font-size: 30px;
+	}
+
+	.state-text p {
+		font-size: 20px;
+	}
+
+	.container-history p {
+		font-size: 18px;
+		width: 70%;
+	}
+}
